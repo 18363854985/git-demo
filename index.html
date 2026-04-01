@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农作物病虫害识别系统</title>
+    <style>
+        /* 简单样式美化 xinde2*/
+        body {
+            font-family: "微软雅黑", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .upload-area {
+            text-align: center;
+            margin: 30px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>基于YOLO的农作物病虫害识别系统</h1>
+        <div class="upload-area">
+            <p>请上传农作物图片进行病虫害识别</p>
+            <input type="file" accept="image/*" id="imageUpload">
+            <br><br>
+            <button onclick="alert('功能开发中...')">开始识别</button>
+        </div>
+        <div id="result">
+            <h3>识别结果将显示在这里</h3>
+            <p>等待上传图片...</p>
+        </div>
+    </div>
+</body>
+</html>
